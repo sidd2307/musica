@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Page from "./pages/Page";
 
@@ -7,13 +8,8 @@ function App() {
   return (
     <div className="relative h-screen max-h-screen">
       <div className="bg-black absolute text-white top-0 flex flex-row">
-        <div className="flex flex-col justify-start fixed">
-          <span className="text-yellow-300 m-4">a</span>
-          <span className="text-yellow-300 m-4">a</span>
-          <span className="text-yellow-300 m-4">a</span>
-          <span className="text-yellow-300 m-4">a</span>
-        </div>
-        <div className="w-[97%] ml-[3%] flex flex-col">
+        <NavBar />
+        <div className="ml-[70px] flex flex-col">
           <div className="h-[10%] text-green-400 fixed bg-black w-[100%]">
             a
           </div>
