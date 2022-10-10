@@ -8,11 +8,11 @@ import Page from "./pages/Page";
 function App() {
   return (
     <div className="relative h-screen max-h-screen">
-      <div className="bg-[#1D2123] absolute text-white top-0 flex flex-row">
+      <div className="bg-[#1D2123] absolute text-white top-0 flex flex-row w-[100%]">
         <NavBar />
-        <div className="ml-[70px] flex flex-col">
+        <div className="sm:ml-[70px] flex flex-col w-[100%]">
           <Search />
-          <div className="h-[90%]">
+          <div className="h-[100%] w-[100%]">
             <BrowserRouter>
               <Routes>
                 <Route path='/' element={<Home />} />
@@ -31,8 +31,3 @@ function App() {
 
 export default App;
 
-{/* <BrowserRouter>
-<Routes>
-  <Route path='/' element={<Home />} />
-</Routes>
-</BrowserRouter> */}

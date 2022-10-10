@@ -12,7 +12,7 @@ import {
 export default function NavBar() {
   const [chosenIcon, setchosenIcon] = useState("home");
   return (
-    <div className="flex flex-col justify-start fixed w-[70px]">
+    <div className="hidden sm:flex flex-col justify-start fixed w-[70px] bg-[#1D2123] h-screen">
       <img className="my-8 mx-4 w-[34px] cursor-pointer" src={Logo} alt="" />
 
       <div className="mt-6 h-[170px] justify-between flex flex-col">
