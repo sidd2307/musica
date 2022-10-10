@@ -15,7 +15,7 @@ export default function NavBar() {
     <div className="flex flex-col justify-start fixed w-[70px]">
       <img className="my-8 mx-4 w-[34px] cursor-pointer" src={Logo} alt="" />
 
-      <div className="mt-6 h-[200px] justify-between flex flex-col">
+      <div className="mt-6 h-[170px] justify-between flex flex-col">
         <span
           onClick={() => setchosenIcon("home")}
           style={{
@@ -54,7 +54,7 @@ export default function NavBar() {
         </span>
       </div>
 
-      <div className="mt-20 h-[80px] justify-between flex flex-col">
+      <div className="mt-12 h-[70px] justify-between flex flex-col">
         <span
           onClick={() => setchosenIcon("User")}
           style={{
